@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   reader.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ghorvath <ghorvath@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/31 12:35:00 by ghorvath          #+#    #+#             */
-/*   Updated: 2022/01/14 08:50:40 by ghorvath         ###   ########.fr       */
+/*   Updated: 2022/01/19 14:38:20 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ static int	validate(char *str, t_tetri *tetri, int *count)
 			total_connections += check_connection(str, i);
 		i++;
 	}
-	if (total_connections < 6 || hash_counter != 4 || *count > 26)
+	if (total_connections < 6 || hash_counter != 4 || *count > 25)
 		return (0);
 	else
 	{

@@ -6,7 +6,7 @@
 #    By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/31 12:35:34 by ghorvath          #+#    #+#              #
-#    Updated: 2022/01/14 13:03:22 by wdonnell         ###   ########.fr        #
+#    Updated: 2022/01/19 14:39:31 by wdonnell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,9 +14,9 @@ NAME			=	fillit
 NAME_COLOR		=	fillit_color
 CC				=	clang
 CFLAGS			=	-Wall	-Wextra	-Werror
-SRCS			=	encode.c	main.c	printer.c	reader.c	solve.c
+SRCS			=	add_tetri.c	main.c	print_board.c	reader.c	solve.c
 SRCS_DIR		=	./sources/
-SRCS_COLOR		=	encode.c	main.c	color.c	reader.c	solve.c
+SRCS_COLOR		=	add_tetri.c	main.c	color.c	reader.c	solve.c
 OBJS_DIR		=	./objects/
 OBJS			=	$(addprefix	$(OBJS_DIR),	$(SRCS:.c=.o))
 OBJS_COLOR		=	$(addprefix	$(OBJS_DIR),	$(SRCS_COLOR:.c=.o))
