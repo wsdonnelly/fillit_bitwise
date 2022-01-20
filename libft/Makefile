@@ -6,11 +6,11 @@
 #    By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/13 08:40:43 by ghorvath          #+#    #+#              #
-#    Updated: 2022/01/18 15:25:16 by wdonnell         ###   ########.fr        #
+#    Updated: 2022/01/20 15:20:25 by wdonnell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC		=	gcc	-Wall	-Wextra	-Werror	-I	includes	-c
+CC		=	gcc	-Wall	-Wextra	-Werror	-I	includes -c
 NAME	=	libft.a
 
 SRCS	=	ft_atoi.c		ft_bzero.c		ft_isalnum.c	ft_isalpha.c	\

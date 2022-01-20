@@ -6,7 +6,7 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 18:20:59 by wdonnell          #+#    #+#             */
-/*   Updated: 2022/01/18 15:29:57 by wdonnell         ###   ########.fr       */
+/*   Updated: 2022/01/20 15:29:10 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,10 @@ void	print_board(t_tetri *tetri, int size)
 
 	board = new_board(size);
 	if (!board)
+	{
+		free (board);
 		return ;
+	}
 	i = 0;
 	while (tetri[i].code != 0)
 	{
