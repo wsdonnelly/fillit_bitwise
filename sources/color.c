@@ -6,7 +6,7 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 18:20:59 by wdonnell          #+#    #+#             */
-/*   Updated: 2022/01/20 15:29:10 by wdonnell         ###   ########.fr       */
+/*   Updated: 2022/01/20 15:43:39 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,7 +123,7 @@ void	print_board(t_tetri *tetri, int size)
 			ft_putchar('\n');
 		i++;
 	}
-	free (board);
+	ft_strdel(&board);
 }
 
 /*
